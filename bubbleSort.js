@@ -1,0 +1,17 @@
+
+function bubbleSort(array){
+  var sort = true;
+  while(sort) {
+    sort = false;
+    for (var i=0; i< array.length-1; i++) {
+      if (array[i] > array[i+1]) {
+        var trade = array[i];
+        array[i] = array[i+1];
+        array[i+1] = trade;
+        sort = true;
+      }
+    }
+  }
+}
+
+module.exports = bubbleSort;
